@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
             <?php if(isset($error)): ?>
                 <p style="color: red; text-align: center; margin-bottom: 10px;"><?php echo $error; ?></p>
             <?php endif; ?>
-            <form method="POST" action="login.php">
+            <form method="POST" action="index.html">
                 <div class="grid-form">
                     <div class="form-group">
                         <label>Username</label>
