@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'db.php';
 if(isset($_POST['submit'])){
     $username = $_POST['uname'];
@@ -8,7 +9,6 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($conn, $sql);
     
     if(mysqli_num_rows($result) > 0){
-        session_start();
         $_SESSION['user'] = $username;
         $_SESSION['login_time'] = time();
         header("Location: index.html");
