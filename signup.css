@@ -58,7 +58,7 @@ input {
      font-weight: bold;
 }
 
-button { 
+a button { 
     grid-column: 1 / -1; 
     padding: 11px; 
     background: #38479e; 
